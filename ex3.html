@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+  </head>
+  <body>
+    <form method="post" action="http://www.iut-fbleau.fr/sitebp/post.php" >
+      <label for="nom">Nom</label>
+      <input type="text" name="nom" required><br>
+      <label for="prenom">Prénom</label>
+      <input type="text" name="prenom" required><br>
+      <label for="date">Date de naissance</label>
+      <input type="date" name="date" required><br>
+      <label for="email">Email</label>
+      <input type="email" name="email"><br>
+      <label for="code">Code postal</label>
+      <input type="number" name="code" max="99999" required><br>
+      <label for="phone">Téléphone portable</label>
+      <input type="text" pattern="0[6-7]\d{8}" name="phone" required><br>
+      <label for="sexe">Sexe</label>
+      <input type="radio" name="sexe" value="male" checked> Homme<br>
+      <input type="radio" name="sexe" value="female"> Femme<br>
+      <input type="radio" name="sexe" value="other"> Autre<br>
+      <label for="semester">Semestre</label>
+      <select name="semester" size="1" required><br>
+      <OPTION>S1</OPTION>
+      <OPTION selected>S2</OPTION>
+      <OPTION>S3</OPTION>
+      <OPTION>S4</OPTION>
+      </select><br>
+      <label for="range">Niveau en HTML</label>
+      <input type="range" name="range" min="0" max="10" value="5" step="1" required><br>
+      <label for="mess">Message</label>
+      <textarea name="mess" id="mess"></textarea><br>
+      
+      <input type="reset"><br>
+      <input type="submit" value="envoyer"><br>
+      
+    <form>
+  </body>
+</html>
